@@ -16,7 +16,7 @@ section { float: left; width: 100%; padding: 31px 0px; }
 .swiper-container { width: 100%; height: 85vh; }
 .swiper-slide { text-align: center; font-size: 18px; background: rgb(255, 255, 255); display: flex; -webkit-box-pack: center; justify-content: flex-start; -webkit-box-align: center; align-items: center; }
 .main-slider .slider-bg-position { background-size: cover !important; background-position: center center !important; }
-.main-slider .swiper-button-prev, .main-slider .swiper-button-next { color: rgb(255, 255, 255); width: 50px; height: 50px; text-align: center; line-height: 34px; font-size: 20px; background-image: none !important; }
+.main-slider .swiper-button-prev, .main-slider .swiper-button-next {color: rgb(255, 255, 255);width: 50px;height: 50px;text-align: center;line-height: 34px;font-size: 15px;background-image: none !important;}
 .main-slider h2 { color: rgb(255, 255, 255); text-transform: uppercase; }
 .main-slider .swiper-pagination-bullet { width: 20px; height: 20px; background: rgba(255, 255, 255, 0.9); }
 .main-slider .swiper-pagination-bullet-active { background: rgb(2, 151, 255); }
