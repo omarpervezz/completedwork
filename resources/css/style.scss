@@ -351,6 +351,7 @@ header {
     padding-left: 90px;
     h2 {
       font-size: 34px;
+      margin-bottom: 25px;
     }
     .link {
       display: flex;
@@ -364,27 +365,18 @@ header {
         color: $white;
         background: #f3a901;
       }
-      .btn_arrow {
-        font-size: 14px;
-        margin-right: 4px;
-        padding: 9px 15px;
-        text-align: center;
-        border-radius: 20px;
-        color: $white;
-        background: #f3a901;
-      }
     }
   }
   .swiper-button-prev,
   .swiper-button-next{
     padding: 4px 10px;
-    background: #891127;
+    background: #f3a901;
     border: none;
     outline: none;
     cursor: pointer;
-    width: 86px;
-    height: 40px;
-    border-radius: 13px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
     text-transform: uppercase;
   }
 }
@@ -409,6 +401,9 @@ header {
   }
   .sub-menu {
     display: none;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    top: 70%;
   }
 }
 
@@ -435,11 +430,24 @@ header {
         font-size: 10px;
         padding: 6px 20px !important;
       }
-      .btn_arrow {
-        font-size: 10px;
-        padding: 6px 10px;
-      }
     }
   }
+  .swiper-button-prev,
+  .swiper-button-next{
+    width: 32px !important;
+    height: 32px !important;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    top: 65%;
+  }
+  .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: 176px;
+  }
+  .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    left: 235px;
+}
+.main-slider .swiper-button-prev, .main-slider .swiper-button-next{
+  line-height: 26px;
+}
 }
 
