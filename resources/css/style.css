@@ -446,7 +446,7 @@ header .row .main-nav-bar .sign-up a {
   .hamburger {
     display: block;
     top: 22px;
-    right: 41px;
+    right: 48px;
   }
   .top-header,
   header .main-nav-bar {
@@ -454,7 +454,7 @@ header .row .main-nav-bar .sign-up a {
   }
   header .row .logo-container .logo-img {
     width: 88px;
-    left: 51px;
+    top: 4px;
   }
   .sub-menu {
     display: none;
