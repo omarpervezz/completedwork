@@ -59,7 +59,7 @@ header .main-nav-bar ul li {
     color: $white;
     left: 10px;
     font-size: 20px;
-    top: 18px;
+    top: 8px;
   }
   input {
     background-color: transparent;
@@ -84,6 +84,9 @@ a.btn_ {
   text-align: center;
   border-radius: 20px;
   color: $white;
+}
+.mobile-sub-menu.collapseMobileMenu{
+  display: block !important;
 }
 /* humburger css */
 .hamburger {
@@ -151,7 +154,7 @@ a.btn_ {
       .search-bar {
         margin-top: 18px;
         span {
-          top: 6px;
+          top: 3px;
         }
       }
     }
@@ -160,6 +163,30 @@ a.btn_ {
       ul {
         li {
           margin: 7px auto;
+          &:first-child{
+            position: relative;
+            span{
+              position:absolute;
+              color: $white;
+              cursor: pointer;
+            }
+            span.rotate{
+              transform: rotate(578deg);
+            }
+            .mobile-sub-menu{
+              width: 142px;
+              height: 61px;
+              background: $white;
+              padding: 9px;
+              z-index: 999;
+              margin: auto;
+              display: none;
+              a{
+                display: block;
+                color: #000;
+              }
+            }
+          }
         }
       }
       .sign-up {

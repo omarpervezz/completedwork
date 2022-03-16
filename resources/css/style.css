@@ -81,7 +81,7 @@ header .main-nav-bar ul li:last-child:after {
   color: #ffffff;
   left: 10px;
   font-size: 20px;
-  top: 18px;
+  top: 8px;
 }
 
 .search-bar input {
@@ -107,6 +107,10 @@ a.btn_ {
   text-align: center;
   border-radius: 20px;
   color: #ffffff;
+}
+
+.mobile-sub-menu.collapseMobileMenu {
+  display: block !important;
 }
 
 /* humburger css */
@@ -195,7 +199,7 @@ a.btn_ {
 }
 
 .mobile-menu-container .mobile-menu .top-nav-mobile .search-bar span {
-  top: 6px;
+  top: 3px;
 }
 
 .mobile-menu-container .mobile-menu .main-nav-bar-mobile {
@@ -204,6 +208,36 @@ a.btn_ {
 
 .mobile-menu-container .mobile-menu .main-nav-bar-mobile ul li {
   margin: 7px auto;
+}
+
+.mobile-menu-container .mobile-menu .main-nav-bar-mobile ul li:first-child {
+  position: relative;
+}
+
+.mobile-menu-container .mobile-menu .main-nav-bar-mobile ul li:first-child span {
+  position: absolute;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.mobile-menu-container .mobile-menu .main-nav-bar-mobile ul li:first-child span.rotate {
+  -webkit-transform: rotate(578deg);
+          transform: rotate(578deg);
+}
+
+.mobile-menu-container .mobile-menu .main-nav-bar-mobile ul li:first-child .mobile-sub-menu {
+  width: 142px;
+  height: 61px;
+  background: #ffffff;
+  padding: 9px;
+  z-index: 999;
+  margin: auto;
+  display: none;
+}
+
+.mobile-menu-container .mobile-menu .main-nav-bar-mobile ul li:first-child .mobile-sub-menu a {
+  display: block;
+  color: #000;
 }
 
 .mobile-menu-container .mobile-menu .main-nav-bar-mobile .sign-up {
