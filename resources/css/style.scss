@@ -80,12 +80,12 @@ a.btn_ {
   width: 155px;
   height: 36px;
   display: inline-block;
-  padding: 6px 10px;
+  padding: 10px 10px;
   text-align: center;
   border-radius: 20px;
   color: $white;
 }
-.mobile-sub-menu.collapseMobileMenu{
+.mobile-sub-menu.collapseMobileMenu {
   display: block !important;
 }
 /* humburger css */
@@ -140,8 +140,7 @@ a.btn_ {
   align-items: center;
   text-align: center;
   .mobile-menu {
-
-    a{
+    a {
       color: $white;
     }
     .top-nav-mobile {
@@ -163,17 +162,17 @@ a.btn_ {
       ul {
         li {
           margin: 7px auto;
-          &:first-child{
+          &:first-child {
             position: relative;
-            span{
-              position:absolute;
+            span {
+              position: absolute;
               color: $white;
               cursor: pointer;
             }
-            span.rotate{
+            span.rotate {
               transform: rotate(578deg);
             }
-            .mobile-sub-menu{
+            .mobile-sub-menu {
               width: 142px;
               height: 61px;
               background: $white;
@@ -181,7 +180,7 @@ a.btn_ {
               z-index: 999;
               margin: auto;
               display: none;
-              a{
+              a {
                 display: block;
                 color: #000;
               }
@@ -244,7 +243,7 @@ header {
           display: flex;
           flex-direction: row;
           align-items: center;
-         
+
           li {
             a {
               color: #3c3d3a;
@@ -312,7 +311,7 @@ header {
           background-color: #f3a901;
           width: 155px;
           display: inline-block;
-          padding: 10px 10px;
+          padding: 11px 10px;
           text-align: center;
           border-radius: 20px;
           color: $white;
@@ -324,20 +323,20 @@ header {
 
 /* slider css */
 .swiper-container {
- #chat-with-us {
-  border: none;
-  outline: none;
-  padding: 14px 20px 8px 20px;
-  background-color: #A6192E;
-  position: absolute;
-  right: -62px;
-  bottom: 47%;
-  z-index: 1000;
-  color: white;
-  -webkit-transform: rotate(271deg);
-  transform: rotate(270deg);
-  font-size: 14px;
-}
+  #chat-with-us {
+    border: none;
+    outline: none;
+    padding: 14px 20px 8px 20px;
+    background-color: #a6192e;
+    position: absolute;
+    right: -62px;
+    bottom: 47%;
+    z-index: 1000;
+    color: white;
+    -webkit-transform: rotate(271deg);
+    transform: rotate(270deg);
+    font-size: 14px;
+  }
   .curve-rough {
     width: 100%;
     position: absolute;
@@ -353,31 +352,37 @@ header {
       font-size: 34px;
       margin-bottom: 25px;
     }
-    .link {
+    .btn_group {
       display: flex;
-      margin-top: 10px;
-      .btn_find_out {
-        font-size: 14px;
-        margin-right: 4px;
-        padding: 9px 35px;
-        text-align: center;
-        border-radius: 20px;
-        color: $white;
-        background: #f3a901;
+      flex-direction: row;
+      .find_out {
+        .btn_find_out {
+          font-size: 14px;
+          margin-right: 4px;
+          padding: 9px 35px;
+          text-align: center;
+          border-radius: 20px;
+          color: $white;
+          background: #f3a901;
+        }
+      }
+      .controler-container {
+        button {
+          padding: 7px 14px;
+          background: #f3a901;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          border-radius: 50%;
+          text-transform: uppercase;
+          margin: -6px 7px;
+          i {
+            color: $white;
+            font-size: 15px;
+          }
+        }
       }
     }
-  }
-  .swiper-button-prev,
-  .swiper-button-next{
-    padding: 4px 10px;
-    background: #f3a901;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    text-transform: uppercase;
   }
 }
 
@@ -402,9 +407,6 @@ header {
   .sub-menu {
     display: none;
   }
-  .swiper-button-next, .swiper-button-prev {
-    top: 70%;
-  }
 }
 
 @media screen and (max-width: 687px) {
@@ -412,42 +414,50 @@ header {
     font-size: 12px;
   }
   .sign-up a {
-    padding: 9px 10px;
+    padding: 11px 10px;
   }
   .swiper-container {
     height: 56vh;
   }
   .swiper-container .slidertext {
-    width: 253px;
-  }
-  .swiper-container .slidertext {
-    padding-left: 19%;
+    padding-left: 6%;
     h2 {
       font-size: 15px;
-    }
-    .link {
-      .btn_find_out {
-        font-size: 10px;
-        padding: 6px 20px !important;
-      }
+      width: 56%;
     }
   }
-  .swiper-button-prev,
-  .swiper-button-next{
-    width: 32px !important;
-    height: 32px !important;
+  .swiper-container .slidertext .btn_group .controler-container button i {
+    font-size: 12px;
   }
-  .swiper-button-next, .swiper-button-prev {
-    top: 65%;
-  }
-  .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-    left: 176px;
-  }
-  .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-    left: 235px;
-}
-.main-slider .swiper-button-prev, .main-slider .swiper-button-next{
-  line-height: 26px;
-}
-}
 
+  .swiper-container #chat-with-us {
+    padding: 10px 20px 8px 16px;
+    font-size: 12px;
+    right: -51px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .swiper-container .slidertext {
+    padding-left: 3%;
+    h2 {
+      width: 46%;
+    }
+  }
+  .swiper-container .slidertext .btn_group .find_out .btn_find_out {
+    padding: 8px 17px;
+  }
+  .swiper-container .slidertext .btn_group .controler-container button {
+    margin: -5px 0;
+  }
+}
+@media screen and (max-width: 300px) {
+  .swiper-container .slidertext .btn_group {
+    flex-direction: column;
+  }
+  .swiper-container .slidertext .btn_group .controler-container {
+    margin-top: 24px;
+  }
+  .swiper-container .slidertext .btn_group .controler-container button {
+    margin: -5px 3px;
+  }
+}

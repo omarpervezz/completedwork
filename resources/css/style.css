@@ -103,7 +103,7 @@ a.btn_ {
   width: 155px;
   height: 36px;
   display: inline-block;
-  padding: 6px 10px;
+  padding: 10px 10px;
   text-align: center;
   border-radius: 20px;
   color: #ffffff;
@@ -418,7 +418,7 @@ header .row .main-nav-bar .sign-up a {
   background-color: #f3a901;
   width: 155px;
   display: inline-block;
-  padding: 10px 10px;
+  padding: 11px 10px;
   text-align: center;
   border-radius: 20px;
   color: #ffffff;
@@ -429,7 +429,7 @@ header .row .main-nav-bar .sign-up a {
   border: none;
   outline: none;
   padding: 14px 20px 8px 20px;
-  background-color: #A6192E;
+  background-color: #a6192e;
   position: absolute;
   right: -62px;
   bottom: 47%;
@@ -459,14 +459,17 @@ header .row .main-nav-bar .sign-up a {
   margin-bottom: 25px;
 }
 
-.swiper-container .slidertext .link {
+.swiper-container .slidertext .btn_group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.swiper-container .slidertext .link .btn_find_out {
+.swiper-container .slidertext .btn_group .find_out .btn_find_out {
   font-size: 14px;
   margin-right: 4px;
   padding: 9px 35px;
@@ -476,17 +479,20 @@ header .row .main-nav-bar .sign-up a {
   background: #f3a901;
 }
 
-.swiper-container .swiper-button-prev,
-.swiper-container .swiper-button-next {
-  padding: 4px 10px;
+.swiper-container .slidertext .btn_group .controler-container button {
+  padding: 7px 14px;
   background: #f3a901;
   border: none;
   outline: none;
   cursor: pointer;
-  width: 42px;
-  height: 42px;
   border-radius: 50%;
   text-transform: uppercase;
+  margin: -6px 7px;
+}
+
+.swiper-container .slidertext .btn_group .controler-container button i {
+  color: #ffffff;
+  font-size: 15px;
 }
 
 /* responsive css */
@@ -510,9 +516,6 @@ header .row .main-nav-bar .sign-up a {
   .sub-menu {
     display: none;
   }
-  .swiper-button-next, .swiper-button-prev {
-    top: 70%;
-  }
 }
 
 @media screen and (max-width: 687px) {
@@ -520,40 +523,55 @@ header .row .main-nav-bar .sign-up a {
     font-size: 12px;
   }
   .sign-up a {
-    padding: 9px 10px;
+    padding: 11px 10px;
   }
   .swiper-container {
     height: 56vh;
   }
   .swiper-container .slidertext {
-    width: 253px;
-  }
-  .swiper-container .slidertext {
-    padding-left: 19%;
+    padding-left: 6%;
   }
   .swiper-container .slidertext h2 {
     font-size: 15px;
+    width: 56%;
   }
-  .swiper-container .slidertext .link .btn_find_out {
-    font-size: 10px;
-    padding: 6px 20px !important;
+  .swiper-container .slidertext .btn_group .controler-container button i {
+    font-size: 12px;
   }
-  .swiper-button-prev,
-  .swiper-button-next {
-    width: 32px !important;
-    height: 32px !important;
+  .swiper-container #chat-with-us {
+    padding: 10px 20px 8px 16px;
+    font-size: 12px;
+    right: -51px;
   }
-  .swiper-button-next, .swiper-button-prev {
-    top: 65%;
+}
+
+@media screen and (max-width: 340px) {
+  .swiper-container .slidertext {
+    padding-left: 3%;
   }
-  .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-    left: 176px;
+  .swiper-container .slidertext h2 {
+    width: 46%;
   }
-  .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-    left: 235px;
+  .swiper-container .slidertext .btn_group .find_out .btn_find_out {
+    padding: 8px 17px;
   }
-  .main-slider .swiper-button-prev, .main-slider .swiper-button-next {
-    line-height: 26px;
+  .swiper-container .slidertext .btn_group .controler-container button {
+    margin: -5px 0;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .swiper-container .slidertext .btn_group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .swiper-container .slidertext .btn_group .controler-container {
+    margin-top: 24px;
+  }
+  .swiper-container .slidertext .btn_group .controler-container button {
+    margin: -5px 3px;
   }
 }
 /*# sourceMappingURL=style.css.map */
