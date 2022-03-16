@@ -75,9 +75,9 @@ li:last-child:after {
 .search-bar span {
   position: absolute;
   color: #ffffff;
-  left: 4px;
+  left: 10px;
   font-size: 20px;
-  top: 17px;
+  top: 18px;
 }
 
 .search-bar input {
@@ -108,9 +108,9 @@ a.btn_ {
 /* humburger css */
 .hamburger {
   overflow: hidden;
-  position: fixed;
+  position: absolute;
   right: 20px;
-  top: 42px;
+  top: 60px;
   cursor: pointer;
   display: none;
   z-index: 1000;
@@ -136,6 +136,7 @@ a.btn_ {
           transition-duration: 0.3s;
 }
 
+/* mobile menu */
 [data-pushbar-id] {
   background: #000000;
 }
@@ -218,14 +219,6 @@ a.btn_ {
           align-items: center;
 }
 
-.top-header .logo .logo-img {
-  position: absolute;
-  width: 110px;
-  top: 0;
-  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.527);
-          box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.527);
-}
-
 .top-header .top-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -269,9 +262,17 @@ header {
 }
 
 header .row {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .row .logo-container .logo-img {
+  position: absolute;
+  width: 147px;
+  top: -0px;
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.527);
+          box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.527);
 }
 
 header .row .main-nav-bar {
@@ -301,6 +302,7 @@ header .row .main-nav-bar div ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 12px;
 }
 
 header .row .main-nav-bar div ul li a {
@@ -369,7 +371,7 @@ header .row .main-nav-bar div ul li:first-child:hover .sub-menu {
 header .row .main-nav-bar .sign-up {
   margin-left: 25px;
   height: 39px;
-  margin-top: 12px;
+  margin-top: 22px;
 }
 
 header .row .main-nav-bar .sign-up a {
@@ -395,6 +397,10 @@ header .row .main-nav-bar .sign-up a {
   width: 500px;
   max-width: 100%;
   padding-left: 90px;
+}
+
+.swiper-container .slidertext h2 {
+  font-size: 34px;
 }
 
 .swiper-container .slidertext .link {
@@ -425,16 +431,25 @@ header .row .main-nav-bar .sign-up a {
 }
 
 /* responsive css */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   li::after {
     content: none;
   }
-  .top-header .top-nav,
+  .hamburger {
+    display: block;
+    top: 22px;
+    right: 41px;
+  }
+  .top-header,
   header .main-nav-bar {
     display: none !important;
   }
-  .hamburger {
-    display: block;
+  header .row .logo-container .logo-img {
+    width: 88px;
+    left: 51px;
+  }
+  .sub-menu {
+    display: none;
   }
 }
 

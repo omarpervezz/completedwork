@@ -19,6 +19,21 @@ a:hover {
   text-decoration: none;
   color: $white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* global css */
 .container {
   width: 87%;
@@ -55,9 +70,9 @@ li {
   span {
     position: absolute;
     color: $white;
-    left: 4px;
+    left: 10px;
     font-size: 20px;
-    top: 17px;
+    top: 18px;
   }
   input {
     background-color: transparent;
@@ -86,12 +101,12 @@ a.btn_ {
 /* humburger css */
 .hamburger {
   overflow: hidden;
-  position: fixed;
-  right: 20px;
-  top: 42px;
-  cursor: pointer;
-  display: none;
-  z-index: 1000;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
 
   div {
     width: 30px;
@@ -107,6 +122,7 @@ a.btn_ {
     transition-duration: 0.3s;
   }
 }
+/* mobile menu */
 [data-pushbar-id] {
   background: #000000;
 }
@@ -170,14 +186,7 @@ a.btn_ {
   display: flex;
   flex-direction: row;
   align-items: center;
-  .logo {
-    .logo-img {
-      position: absolute;
-      width: 110px;
-      top: 0;
-      box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.527);
-    }
-  }
+
   .top-nav {
     display: flex;
     flex-direction: row;
@@ -200,7 +209,15 @@ header {
   display: flex;
   align-items: center;
   .row {
-    justify-content: flex-end;
+    justify-content:space-between;
+    .logo-container {
+      .logo-img {
+        position: absolute;
+        width:147px;
+        top: -0px;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.527);
+      }
+    }
     .main-nav-bar {
       display: flex;
       flex-direction: row;
@@ -210,6 +227,7 @@ header {
           display: flex;
           flex-direction: row;
           align-items: center;
+          margin-top: 12px;
           li {
             a {
               color: #3c3d3a;
@@ -272,7 +290,7 @@ header {
       .sign-up {
         margin-left: 25px;
         height: 39px;
-        margin-top: 12px;
+        margin-top: 22px;
         a {
           background-color: #f3a901;
           width: 155px;
@@ -300,6 +318,9 @@ header {
     width: 500px;
     max-width: 100%;
     padding-left: 90px;
+    h2{
+      font-size: 34px;
+    }
     .link {
       display: flex;
       margin-top: 10px;
@@ -326,17 +347,27 @@ header {
 }
 
 /* responsive css */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   li::after {
     content: none;
   }
-  .top-header .top-nav,
+  .hamburger {
+    display: block;
+    top: 22px;
+    right: 41px;
+  }
+  .top-header ,
   header .main-nav-bar {
     display: none !important;
   }
-  .hamburger {
-    display: block;
+  header .row .logo-container .logo-img {
+    width: 88px;
+    left: 51px;
   }
+  .sub-menu{
+    display: none;
+  }
+  
 }
 
 @media screen and (max-width: 687px) {
