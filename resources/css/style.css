@@ -43,18 +43,21 @@ a:hover {
           justify-content: space-between;
 }
 
-li {
+.top-header .top-nav .right-top-nav li,
+header .main-nav-bar ul li {
   margin-left: 32px;
   position: relative;
 }
 
-li a {
+.top-header .top-nav .right-top-nav li a,
+header .main-nav-bar ul li a {
   color: #ffffff;
   font-size: 16px;
   cursor: pointer;
 }
 
-li::after {
+.top-header .top-nav .right-top-nav li::after,
+header .main-nav-bar ul li::after {
   content: "";
   position: absolute;
   height: 18px;
@@ -63,7 +66,8 @@ li::after {
   right: -15px;
 }
 
-li:last-child:after {
+.top-header .top-nav .right-top-nav li:last-child:after,
+header .main-nav-bar ul li:last-child:after {
   content: none;
 }
 
@@ -174,6 +178,10 @@ a.btn_ {
   text-align: center;
 }
 
+.mobile-menu-container .mobile-menu a {
+  color: #ffffff;
+}
+
 .mobile-menu-container .mobile-menu .top-nav-mobile {
   margin-bottom: 20px;
 }
@@ -206,7 +214,7 @@ a.btn_ {
 .top-header {
   width: 100%;
   background-color: #a6192e;
-  height: 38px;
+  height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

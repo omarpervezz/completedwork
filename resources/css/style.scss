@@ -30,7 +30,8 @@ a:hover {
   flex-direction: row;
   justify-content: space-between;
 }
-li {
+.top-header .top-nav .right-top-nav li,
+header .main-nav-bar ul li {
   margin-left: 32px;
   position: relative;
   a {
@@ -136,6 +137,10 @@ a.btn_ {
   align-items: center;
   text-align: center;
   .mobile-menu {
+
+    a{
+      color: $white;
+    }
     .top-nav-mobile {
       margin-bottom: 20px;
       ul {
@@ -168,7 +173,7 @@ a.btn_ {
 .top-header {
   width: 100%;
   background-color: #a6192e;
-  height: 38px;
+  height: 45px;
   display: flex;
   flex-direction: row;
   align-items: center;
