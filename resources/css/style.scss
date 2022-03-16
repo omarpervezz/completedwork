@@ -20,20 +20,6 @@ a:hover {
   color: $white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* global css */
 .container {
   width: 87%;
@@ -101,12 +87,12 @@ a.btn_ {
 /* humburger css */
 .hamburger {
   overflow: hidden;
-    position: absolute;
-    right: 20px;
-    top: 60px;
-    cursor: pointer;
-    display: none;
-    z-index: 1000;
+  position: absolute;
+  right: 20px;
+  top: 60px;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
 
   div {
     width: 30px;
@@ -124,7 +110,7 @@ a.btn_ {
 }
 /* mobile menu */
 [data-pushbar-id] {
-  background: #000000;
+  background: #a6192e;
 }
 #closeMenu {
   background-color: transparent;
@@ -209,11 +195,11 @@ header {
   display: flex;
   align-items: center;
   .row {
-    justify-content:space-between;
+    justify-content: space-between;
     .logo-container {
       .logo-img {
         position: absolute;
-        width:147px;
+        width: 147px;
         top: -0px;
         box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.527);
       }
@@ -318,7 +304,7 @@ header {
     width: 500px;
     max-width: 100%;
     padding-left: 90px;
-    h2{
+    h2 {
       font-size: 34px;
     }
     .link {
@@ -356,7 +342,7 @@ header {
     top: 22px;
     right: 41px;
   }
-  .top-header ,
+  .top-header,
   header .main-nav-bar {
     display: none !important;
   }
@@ -364,13 +350,18 @@ header {
     width: 88px;
     left: 51px;
   }
-  .sub-menu{
+  .sub-menu {
     display: none;
   }
-  
 }
 
 @media screen and (max-width: 687px) {
+  .mobile-menu a {
+    font-size: 12px;
+  }
+  .sign-up a {
+    padding: 9px 10px;
+  }
   .swiper-container {
     height: 56vh;
   }
@@ -378,19 +369,24 @@ header {
     width: 253px;
   }
   .swiper-container .slidertext {
-    padding-left: 3%;
+    padding-left: 19%;
     h2 {
       font-size: 15px;
     }
     .link {
       .btn_find_out {
-        font-size: 9px;
-        padding: 3px 20px !important;
+        font-size: 10px;
+        padding: 6px 20px !important;
       }
       .btn_arrow {
-        font-size: 9px;
-        padding: 3px 10px;
+        font-size: 10px;
+        padding: 6px 10px;
       }
     }
   }
+}
+@media screen and (max-width: 500px) {
+  // .swiper-container .slidertext{
+  //   padding-left:;
+  // }
 }
