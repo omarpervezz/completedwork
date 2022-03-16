@@ -495,7 +495,7 @@ header .row .main-nav-bar .sign-up a {
   width: 86px;
   height: 40px;
   border-radius: 13px;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 /* responsive css */
