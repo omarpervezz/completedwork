@@ -81,7 +81,7 @@ header .main-nav-bar ul li:last-child:after {
   color: #ffffff;
   left: 10px;
   font-size: 20px;
-  top: 8px;
+  top: 4px;
 }
 
 .search-bar input {
@@ -288,7 +288,6 @@ a.btn_ {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 15px;
 }
 
 /* header css */
@@ -344,7 +343,6 @@ header .row .main-nav-bar div ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 12px;
 }
 
 header .row .main-nav-bar div ul li a {
@@ -413,14 +411,14 @@ header .row .main-nav-bar div ul li:first-child:hover .sub-menu {
 header .row .main-nav-bar .sign-up {
   margin-left: 25px;
   height: 39px;
-  margin-top: 22px;
+  margin-top: 7px;
 }
 
 header .row .main-nav-bar .sign-up a {
   background-color: #f3a901;
   width: 155px;
   display: inline-block;
-  padding: 8px 10px;
+  padding: 10px 10px;
   text-align: center;
   border-radius: 20px;
   color: #ffffff;

@@ -10,13 +10,10 @@ pushbar.close();
 
 // mobile menu sab collpase
 const collpaseMenu = document.getElementById('collapse_menu');
-const expandCollapse = collpaseMenu.querySelector('.collpaseMenu');
-console.log(expandCollapse)
 const mobileMenuC = document.querySelector('#mobile-sub-menu');
 
 
 collpaseMenu.addEventListener(('click'),  () => {
   mobileMenuC.classList.toggle('collapseMobileMenu');
-  expand.classList.add('rotate');
   
 })
