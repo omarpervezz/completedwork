@@ -338,7 +338,7 @@ header {
 }
 
 /* responsive css */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1070px) {
   li::after {
     content: none;
   }
@@ -390,8 +390,4 @@ header {
     }
   }
 }
-@media screen and (max-width: 500px) {
-  // .swiper-container .slidertext{
-  //   padding-left:;
-  // }
-}
+
