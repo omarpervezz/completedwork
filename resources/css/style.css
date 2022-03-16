@@ -425,6 +425,20 @@ header .row .main-nav-bar .sign-up a {
 }
 
 /* slider css */
+.swiper-container #chat-with-us {
+  border: none;
+  outline: none;
+  padding: 16px 20px;
+  background-color: #891026;
+  position: absolute;
+  right: -64px;
+  bottom: 47%;
+  z-index: 1000;
+  color: white;
+  -webkit-transform: rotate(271deg);
+          transform: rotate(271deg);
+}
+
 .swiper-container .curve-rough {
   width: 100%;
   position: absolute;
@@ -468,6 +482,19 @@ header .row .main-nav-bar .sign-up a {
   border-radius: 20px;
   color: #ffffff;
   background: #f3a901;
+}
+
+.swiper-container .swiper-button-prev,
+.swiper-container .swiper-button-next {
+  padding: 4px 10px;
+  background: #891127;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 86px;
+  height: 40px;
+  border-radius: 13px;
+  text-transform: capitalize;
 }
 
 /* responsive css */

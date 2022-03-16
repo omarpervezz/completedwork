@@ -324,6 +324,18 @@ header {
 
 /* slider css */
 .swiper-container {
+ #chat-with-us {
+    border: none;
+    outline: none;
+    padding: 16px 20px;
+    background-color: #891026;
+    position: absolute;
+    right: -64px;
+    bottom: 47%;
+    z-index: 1000;
+    color: white;
+    transform: rotate(271deg);
+}
   .curve-rough {
     width: 100%;
     position: absolute;
@@ -360,6 +372,18 @@ header {
         background: #f3a901;
       }
     }
+  }
+  .swiper-button-prev,
+  .swiper-button-next{
+    padding: 4px 10px;
+    background: #891127;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 86px;
+    height: 40px;
+    border-radius: 13px;
+    text-transform: capitalize;
   }
 }
 
